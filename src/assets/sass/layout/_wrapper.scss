@@ -326,7 +326,8 @@
 						}
 
 						> .content {
-							height: 100vh;
+							height: 60vh;
+							max-height: 44rem;
 							max-width: none;
 						}
 					}
@@ -522,6 +523,11 @@
 									}
 
 							}
+
+							> .content {
+								height: 50vh;
+								max-height: 32rem;
+							}
 						}
 
 					// Last.
@@ -554,6 +560,11 @@
 
 			// Pad.
 				@include wrapper-pad-portrait($pad, 1.5);
+
+			> section.intro > .content {
+				height: 45vh;
+				max-height: 26rem;
+			}
 
 		}
 
