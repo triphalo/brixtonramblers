@@ -27,5 +27,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-recaptcha',
+    'gatsby-plugin-netlify',
   ],
 };
