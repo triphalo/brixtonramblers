@@ -155,6 +155,37 @@ For Freemasons, there are four important values that help define their path thro
         </div>
       </section>
 
+      <section id="ladies-night">
+        <header>
+          <h2>Ladies’ Night 2027</h2>
+          <p>Saturday 6 February 2027 at the Civil Service Club</p>
+        </header>
+        <div className="content">
+          <p>
+            The Worshipful Master and Brethren of Brixton Ramblers Lodge No. 3347 invite you to an evening of good food, music and dancing in the heart of London.
+          </p>
+          <ul className="feature-icons">
+            <li className="icon fa-map-marker">13–15 Great Scotland Yard</li>
+            <li className="icon fa-clock-o">Drinks reception from 6.00pm</li>
+            <li className="icon fa-gbp">£80 per person</li>
+            <li className="icon fa-music">Three-course dinner and after-dinner singer</li>
+            <li className="icon fa-users">Attendance is capped at 70 guests</li>
+          </ul>
+          <ul className="actions">
+            <li>
+              <a href="/2027ladiesnight/" className="button primary large">
+                Event details and booking
+              </a>
+            </li>
+            <li>
+              <a href="/downloads/brixton-ramblers-ladies-night-2027.pdf" className="button large" download>
+                Download the flyer
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section>
         <header>
           <h2>Further information</h2>
@@ -179,7 +210,7 @@ For Freemasons, there are four important values that help define their path thro
         </div>
       </section>
 
-      <section>
+      <section id="contact">
         <ContactForm />
         <SideFooter />
       </section>

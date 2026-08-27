@@ -18,6 +18,6 @@ module.exports = {
       url: 'https://twitter.com/brixtonramblers',
     },
   ],
-  emailId: 'info@brixtonramblers.org',
+  emailId: null,
   address: "Mark Masons Hall, 86 St. James's Street, London",
 };
