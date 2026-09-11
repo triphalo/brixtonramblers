@@ -1,7 +1,24 @@
 import React, { useState } from 'react';
 
+import formatAdditionalGuests from '../utils/formatAdditionalGuests';
+
 export default function LadiesNightForm() {
   const [guests, setGuests] = useState([1]);
+
+  const syncAdditionalGuests = event => {
+    const form = event.currentTarget;
+    const additionalGuestsField = form.elements.namedItem('additional_guests');
+
+    const additionalGuests = formatAdditionalGuests(
+      guests.slice(1),
+      (guestId, fieldName) => {
+        const field = form.elements.namedItem(`guest_${guestId}_${fieldName}`);
+        return field ? field.value : '';
+      }
+    );
+
+    additionalGuestsField.value = additionalGuests;
+  };
 
   const addGuest = () => {
     const nextGuest = Math.max(...guests) + 1;
@@ -19,10 +36,17 @@ export default function LadiesNightForm() {
       action="/2027ladiesnight-thank-you/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      onChange={syncAdditionalGuests}
+      onSubmit={syncAdditionalGuests}
     >
       <input type="hidden" name="form-name" value="ladies-night-2027" />
       <input type="hidden" name="bot-field" />
-      <input type="hidden" name="subject" value="New Brixton Ramblers Ladies’ Night booking" />
+      <input
+        type="hidden"
+        name="subject"
+        value="New Brixton Ramblers Ladies’ Night booking"
+      />
+      <input type="hidden" name="additional_guests" />
 
       <div className="fields">
         <div className="field half">
@@ -39,7 +63,12 @@ export default function LadiesNightForm() {
         </div>
         <div className="field half">
           <label htmlFor="rank">Rank, if applicable</label>
-          <input type="text" name="rank" id="rank" placeholder="For example: Bro, W.Bro, or N/A" />
+          <input
+            type="text"
+            name="rank"
+            id="rank"
+            placeholder="For example: Bro, W.Bro, or N/A"
+          />
         </div>
         <div className="field">
           <label htmlFor="dietary-requirements">Dietary requirements</label>
@@ -53,7 +82,10 @@ export default function LadiesNightForm() {
 
         <div className="field">
           <h3>Additional guests</h3>
-          <p>Add the name, rank and dietary requirements for each additional guest.</p>
+          <p>
+            Add the name, rank and dietary requirements for each additional
+            guest.
+          </p>
         </div>
 
         {guests.map((guestId, index) => (
@@ -62,14 +94,20 @@ export default function LadiesNightForm() {
               <legend>Guest {index + 1} (optional)</legend>
               {guests.length > 1 && (
                 <div className="guest-entry__actions">
-                  <button type="button" className="small" onClick={() => removeGuest(guestId)}>
+                  <button
+                    type="button"
+                    className="small"
+                    onClick={() => removeGuest(guestId)}
+                  >
                     Remove guest
                   </button>
                 </div>
               )}
               <div className="guest-grid">
                 <div>
-                  <label htmlFor={`guest-${guestId}-first-name`}>First name</label>
+                  <label htmlFor={`guest-${guestId}-first-name`}>
+                    First name
+                  </label>
                   <input
                     type="text"
                     name={`guest_${guestId}_first_name`}
@@ -77,7 +115,9 @@ export default function LadiesNightForm() {
                   />
                 </div>
                 <div>
-                  <label htmlFor={`guest-${guestId}-last-name`}>Last name</label>
+                  <label htmlFor={`guest-${guestId}-last-name`}>
+                    Last name
+                  </label>
                   <input
                     type="text"
                     name={`guest_${guestId}_last_name`}
@@ -85,7 +125,9 @@ export default function LadiesNightForm() {
                   />
                 </div>
                 <div>
-                  <label htmlFor={`guest-${guestId}-rank`}>Rank, if applicable</label>
+                  <label htmlFor={`guest-${guestId}-rank`}>
+                    Rank, if applicable
+                  </label>
                   <input
                     type="text"
                     name={`guest_${guestId}_rank`}
@@ -117,7 +159,11 @@ export default function LadiesNightForm() {
           </button>
         </li>
         <li>
-          <input type="submit" value="Send booking details" className="button primary" />
+          <input
+            type="submit"
+            value="Send booking details"
+            className="button primary"
+          />
         </li>
       </ul>
     </form>

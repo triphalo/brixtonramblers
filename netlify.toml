@@ -3,5 +3,5 @@
   publish = "public"
 
 [build.environment]
-  NODE_VERSION = "18.20.8"
+  NODE_VERSION = "22.22.3"
   NODE_OPTIONS = "--openssl-legacy-provider"
