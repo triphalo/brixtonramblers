@@ -11,21 +11,20 @@
     "email": "anubhav.srivastava00@gmail.com"
   },
   "dependencies": {
-    "cheerio": "1.0.0-rc.12",
-    "gatsby": "^2.4.3",
-    "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-netlify": "2.11.1",
-    "gatsby-plugin-offline": "^2.1.0",
-    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby": "^5.16.1",
+    "gatsby-plugin-manifest": "^5.16.0",
+    "gatsby-plugin-netlify": "^5.1.1",
+    "gatsby-plugin-offline": "^6.16.0",
+    "gatsby-plugin-react-helmet": "^6.16.0",
     "gatsby-plugin-recaptcha": "^1.0.5",
-    "gatsby-plugin-sass": "^3.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-images": "^0.5.19",
+    "gatsby-plugin-sass": "^6.16.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
     "react-scrollspy": "^3.4.0",
-    "sass": "^1.32.13",
-    "smoothscroll-polyfill": "^0.4.4"
+    "sass": "^1.80.0",
+    "smoothscroll-polyfill": "^0.4.4",
+    "yet-another-react-lightbox": "^3.25.0"
   },
   "scripts": {
     "develop": "gatsby develop",
@@ -37,11 +36,8 @@
     "test": "node --test"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^6.3.0",
     "prettier": "^1.17.0"
-  },
-  "overrides": {
-    "sharp": "0.35.4"
   },
   "keywords": [
     "gatsby",
@@ -52,5 +48,21 @@
   "bugs": {
     "url": "https://github.com/anubhavsrivastava/gatsby-starter-paradigmshift/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-paradigmshift#readme"
+  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-paradigmshift#readme",
+  "overrides": {
+    "@ardatan/relay-compiler": {
+      "immutable": "~3.8.4"
+    },
+    "cookie": "^0.7.2",
+    "gatsby": {
+      "path-to-regexp": "0.1.13",
+      "uuid": "^11.1.1"
+    },
+    "lodash": "^4.18.1",
+    "resolve-url-loader": "^5.0.0",
+    "serialize-javascript": "^7.1.4",
+    "sharp": "0.35.5",
+    "tmp": "^0.2.7",
+    "webpack": "^5.112.2"
+  }
 }

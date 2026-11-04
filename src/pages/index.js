@@ -13,27 +13,27 @@ import ContactForm from '../components/ContactForm';
 
 const img_set_1 = [
   {
-    src: require('../assets/images/gallery/fulls/ugle-meeting.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/ugle-meeting.jpg'),
+    src: require('../assets/images/gallery/fulls/ugle-meeting.jpg').default,
+    thumbnail: require('../assets/images/gallery/thumbs/ugle-meeting.jpg').default,
     title: 'The Grand Temple',
     desc: 'A full meeting.',
     full: true,
   },
   {
-    src: require('../assets/images/gallery/fulls/Front_exterior_of_Freemasons_Hall_London.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/Front_exterior_of_Freemasons_Hall_London.jpg'),
+    src: require('../assets/images/gallery/fulls/Front_exterior_of_Freemasons_Hall_London.jpg').default,
+    thumbnail: require('../assets/images/gallery/thumbs/Front_exterior_of_Freemasons_Hall_London.jpg').default,
     title: 'Freemasons Hall',
     desc: 'Headquarters of the United Grand Lodge of England',
   },
   {
-    src: require('../assets/images/gallery/fulls/masonic-apron.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/masonic-apron.jpg'),
+    src: require('../assets/images/gallery/fulls/masonic-apron.jpg').default,
+    thumbnail: require('../assets/images/gallery/thumbs/masonic-apron.jpg').default,
     title: 'Masonic regalia',
     desc: 'Different aprons represent rank and region',
   },
   {
-    src: require('../assets/images/gallery/fulls/freemasons-hall-inside.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/freemasons-hall-inside.jpg'),
+    src: require('../assets/images/gallery/fulls/freemasons-hall-inside.jpg').default,
+    thumbnail: require('../assets/images/gallery/thumbs/freemasons-hall-inside.jpg').default,
     title: 'Inside Freemasons Hall',
     desc: 'One of the many art deco halls',
     full: true,
@@ -41,27 +41,27 @@ const img_set_1 = [
 ];
 const img_set_2 = [
   {
-    src: require('../assets/images/gallery/fulls/pfmall.jpeg'),
-    thumbnail: require('../assets/images/gallery/thumbs/pfmall.jpeg'),
+    src: require('../assets/images/gallery/fulls/pfmall.jpeg').default,
+    thumbnail: require('../assets/images/gallery/thumbs/pfmall.jpeg').default,
     title: 'Cycling up the Mall',
     desc: 'Our penny farthing riders',
     full: true,
   },
   {
-    src: require('../assets/images/gallery/fulls/victoria-memorial-penny-farthing.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/victoria-memorial-penny-farthing.jpg'),
+    src: require('../assets/images/gallery/fulls/victoria-memorial-penny-farthing.jpg').default,
+    thumbnail: require('../assets/images/gallery/thumbs/victoria-memorial-penny-farthing.jpg').default,
     title: 'Around Buckingham Palace',
     desc: 'Good morning Your Majesty!',
   },
   {
-    src: require('../assets/images/gallery/fulls/high-wheelers-masonic.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/high-wheelers-masonic.jpg'),
+    src: require('../assets/images/gallery/fulls/high-wheelers-masonic.jpg').default,
+    thumbnail: require('../assets/images/gallery/thumbs/high-wheelers-masonic.jpg').default,
     title: 'Riding high',
     desc: 'Its a long way down from here',
   },
   {
-    src: require('../assets/images/gallery/fulls/st-jamess-palace-penny-farthing.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/st-jamess-palace-penny-farthing.jpg'),
+    src: require('../assets/images/gallery/fulls/st-jamess-palace-penny-farthing.jpg').default,
+    thumbnail: require('../assets/images/gallery/thumbs/st-jamess-palace-penny-farthing.jpg').default,
     title: "Passing St James's' Palace",
     desc: 'Next stop, the pub!',
     full: true,
